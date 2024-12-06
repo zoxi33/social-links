@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CustomFont"; /* Name your font family */
+  src: url("../fonts/static/Inter-Regular.ttf"); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: "CustomFontBold"; /* Name your font family */
+  src: url("../fonts/static//Inter-Bold.ttf"); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: "CustomFontThin"; /* Name your font family */
+  src: url("../fonts/static/Inter-SemiBold.ttf"); /* Locate the .ttf file within your directory*/
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: "CustomFont";
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+}
+
+.box {
+  background-color: hsl(0, 0%, 12%);
+  height: 600px;
+  width: 400px;
+  padding: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+.box .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+}
+.box .top img {
+  width: 84px;
+  border-radius: 50%;
+}
+.box .top .name {
+  font-size: 1.4rem;
+  font-family: "CustomFontBold";
+  margin: 1.3em 0 0.322em;
+}
+.box .top .place {
+  font-size: 0.8em;
+  color: hsl(75, 94%, 57%);
+}
+.box .top .work {
+  color: rgb(168, 168, 168);
+  padding: 2em 0 1em;
+}
+.box .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 13px;
+}
+.box .bottom .btn {
+  border: none;
+  background: none;
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.6s;
+}
+.box .bottom .btn:hover {
+  color: #000;
+  background-color: hsl(75, 94%, 57%);
+}/*# sourceMappingURL=main.css.map */
